@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AnimatedLogo() {
   return (
-    <div className="w-full flex items-center justify-center ">
+    <div id="bbc-container" className="w-full flex items-center justify-center">
       <svg
         id="bbc-logo"
         width="800"

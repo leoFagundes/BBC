@@ -138,11 +138,27 @@
     opacity: 0;
     animation: fadein 2s ease 4.3s forwards;
   }
+
+  @media screen and (max-width: 500px) {
+    #bbc-logo {
+      transform: translateY(100px) scale(1.1);
+      animation: bbc-move-mobile 1.5s ease 3.5s forwards;
+    }
+  }
 }
 
 @keyframes bbc-move {
   0% {
     transform: translateY(100px) scale(1.4);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes bbc-move-mobile {
+  0% {
+    transform: translateY(100px) scale(1.1);
   }
   100% {
     transform: translateY(0) scale(1);
