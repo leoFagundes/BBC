@@ -17,11 +17,12 @@
 @theme {
   --color-hbl-green: #006429;
   --color-background: #ffffffe6;
+  --color-primary-green: #78be43;
 }
 
 @layer utilities {
   .shadow-card {
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   }
 
   #NutritionClub > #n-nc {

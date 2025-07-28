@@ -26,14 +26,16 @@ export default function Card({
   return (
     <div
       onClick={handleClick}
-      className="relative group w-[300px] h-[200px] rounded-md shadow-card cursor-pointer transition-all p-3 flex items-center justify-center border border-transparent duration-700 hover:border-hbl-green"
+      className="flex flex-col relative w-[300px] h-[200px] rounded-sm shadow-card cursor-pointer transition-all items-center justify-center outline-transparent outline duration-500 hover:outline-primary-green"
     >
-      <h2 className="text-center text-gray-600 font-semibold text-2xl">
-        {title}
-      </h2>
-      <span className="flex items-center gap-2 text-hbl-green font-semibold absolute bottom-0 opacity-0 transition-all duration-700 group-hover:opacity-100 group-hover:translate-y-7">
-        {srcTitle} {icon && icon}
-      </span>
+      <div className="flex-1 flex justify-center items-center p-2">
+        <h2 className="text-center text-gray-600 font-semibold text-2xl ">
+          {title}
+        </h2>
+      </div>
+      <div className="h-[50px] bg-primary-green w-full rounded-b-sm flex justify-center items-center text-white font-semibold text-xl">
+        {srcTitle}
+      </div>
     </div>
   );
 }
