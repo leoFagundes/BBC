@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AnimatedLogo() {
   return (
-    <div className="w-full flex items-center justify-center">
+    <div className="w-full flex items-center justify-center ">
       <svg
         id="bbc-logo"
         width="800"
@@ -10,7 +10,7 @@ export default function AnimatedLogo() {
         viewBox="0 0 3316 668"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-[80%] max-w-[40vw] h-auto max-h-[90vh]"
+        className="w-[80%] max-w-[40vw] h-auto max-h-[90vh] min-w-[250px]"
       >
         <g id="logo-nc">
           <g id="NutritionClub">

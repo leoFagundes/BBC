@@ -15,11 +15,13 @@
 }
 
 @theme {
+  --color-hbl-green: #006429;
+  --color-background: #ffffffe6;
 }
 
 @layer utilities {
   .shadow-card {
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
   }
 
   #NutritionClub > #n-nc {
@@ -106,6 +108,7 @@
     animation: nc-text 3s ease 1.3s forwards,
       nc-text-fill-opacity 2s ease 3s forwards;
   }
+
   #glasses > #glass-blue,
   #glass-green > path {
     opacity: 0;
@@ -113,20 +116,24 @@
     animation: nc-text 4.3s ease 0s forwards,
       nc-text-fill-opacity 2s ease 3s forwards;
   }
+
   #smile {
     opacity: 0;
     fill-opacity: 0;
     animation: nc-text 4.3s ease 0s forwards,
       nc-text-fill-opacity 2s ease 3s forwards;
   }
+
   #herbalife {
     opacity: 0;
     animation: fadein 2s ease 4.8s forwards;
   }
+
   #bbc-logo {
     transform: translateY(100px) scale(1.4);
     animation: bbc-move 1.5s ease 3.5s forwards;
   }
+
   #hero-container {
     opacity: 0;
     animation: fadein 2s ease 4.3s forwards;
