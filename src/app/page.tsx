@@ -101,7 +101,7 @@ export default function Home() {
             <Card
               srcTitle="Baixar"
               src="https://aem.herbalifenutrition.com/linkshare.html?sh=659416f5_ec5e_4e7d_80f2_5ecc4db723d6.sEKkedkDvO2gr-mVFD2n_3geIM5P_P3xIKk19YxGjds"
-              title="Documentos de Pré-Lançamento de 6 Semanas"
+              title="Pré-Lançamento de 6 Semanas"
               icon={<FiDownload />}
             />
             <Card
@@ -137,7 +137,7 @@ export default function Home() {
             <Card
               srcTitle="Baixar"
               src="https://aem.herbalifenutrition.com/linkshare.html?sh=a46ad3ea_692d_48de_ad13_d34ad16a9594.EqPcv_o14S2np3Fa3CTeGEICyVfXBtBak1TEeGXxbyQ"
-              title="Todos os Documentos para Treinamento de Coach"
+              title="Documentos para Treinamento de Coach"
               icon={<FiDownload />}
             />
             <Card
