@@ -19,7 +19,7 @@ export default function Home() {
         className="flex flex-col items-center gap-3 p-4"
       >
         <h1 className="text-gray-600 font-semibold text-xl sm:text-4xl text-center">
-          Bem-vindo ao seu Clube Econômico de Café da Manhã!
+          Bem-vindo ao seu Clube de Café da Manhã Econômico!
         </h1>
         <iframe
           width="560"
