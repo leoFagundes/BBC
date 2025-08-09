@@ -69,13 +69,13 @@ export default function Home() {
             <Card
               srcTitle="Assistir"
               onClick={() => setWelcomeVideoOpen(true)}
-              title="Vídeo de Apresentação do Clube de Café da Manhã Econômico"
+              title="Apresentação do Clube de Café da Manhã Econômico"
               icon={<FaArrowRightFromBracket />}
             />
             <Card
-              srcTitle="Galeria de vídeos"
+              srcTitle="Galeria"
               src="https://www.youtube.com/playlist?list=PLSksKII1HhP4yNgQBOkKS1Bv_5TXgjSY7"
-              title="Vídeos de Treinamento Disponíveis Online"
+              title="Treinamentos Disponíveis Online"
               icon={<FaArrowRightFromBracket />}
             />
           </div>
