@@ -3,13 +3,40 @@
 import AnimatedLogo from "@/components/animated-logo";
 import Card from "@/components/card";
 import Modal from "@/components/modal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { FiDownload } from "react-icons/fi";
 import { MdOutlineVideoLibrary } from "react-icons/md";
 
 export default function Home() {
   const [welcomeVideoOpen, setWelcomeVideoOpen] = useState(false);
+
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+
+    const forceScroll = setTimeout(() => {
+      window.scrollTo(0, 0);
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }, 100);
+
+    document.body.style.overflow = "hidden";
+
+    const unlockScroll = setTimeout(() => {
+      document.body.style.overflow = "auto";
+    }, 3500);
+
+    return () => {
+      clearTimeout(forceScroll);
+      clearTimeout(unlockScroll);
+    };
+  }, []);
 
   return (
     <div className="w-full flex flex-col items-center p-4 mb-8">
@@ -143,7 +170,7 @@ export default function Home() {
         <iframe
           width="560"
           height="415"
-          src="https://www.youtube.com/embed/ozNpO-tFi3k?si=NtHbbe_1ncpXgPW0"
+          src="https://www.youtube.com/embed/Mzm4rTy52ao?si=4FjtCP5YdHkfgevj"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
