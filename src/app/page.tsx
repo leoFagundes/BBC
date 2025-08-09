@@ -48,16 +48,16 @@ export default function Home() {
         <h1 className="text-gray-600 font-semibold text-xl sm:text-4xl text-center">
           Bem-vindo ao seu Clube de Café da Manhã Econômico!
         </h1>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Hl-vPXPZKE8?si=eJAcvS571B1sTXrr?rel=0"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          className="my-6 shadow-card w-[80%] max-w-[600px] min-w-[300px] rounded-sm"
-        ></iframe>
+        <div className="relative w-full max-w-[600px] aspect-video my-6 shadow-card rounded-sm">
+          <iframe
+            src="https://www.youtube.com/embed/Hl-vPXPZKE8?rel=0&modestbranding=1"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="absolute top-0 left-0 w-full h-full rounded-sm"
+          ></iframe>
+        </div>
         <div className="w-full flex flex-col gap-8 max-w-[80%]">
           <div className="relative flex justify-center items-center my-4">
             <div className="h-[1px] w-full border-t border-dashed border-gray-600/50" />
@@ -167,16 +167,16 @@ export default function Home() {
         isOpen={welcomeVideoOpen}
         onClose={() => setWelcomeVideoOpen(false)}
       >
-        <iframe
-          width="560"
-          height="415"
-          src="https://www.youtube.com/embed/Mzm4rTy52ao?si=4FjtCP5YdHkfgevj"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          className="my-6 shadow-card w-[100%] max-w-[800px] min-w-[300px] rounded-sm"
-        ></iframe>
+        <div className="relative w-full max-w-[800px] aspect-video my-6 shadow-card rounded-sm">
+          <iframe
+            src="https://www.youtube.com/embed/Mzm4rTy52ao?rel=0&modestbranding=1"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="absolute top-0 left-0 w-full h-full rounded-sm"
+          ></iframe>
+        </div>
       </Modal>
     </div>
   );
