@@ -156,7 +156,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-10">
             <Card
               srcTitle="Acessar"
-              src="https://herbalife-econnectslc.hrbl.com/ncreg/"
+              src="https://pt.research.net/r/cadastrofacilevs"
               title="Registre seu Clube aqui"
               icon={<FaArrowRightFromBracket />}
             />
