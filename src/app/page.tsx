@@ -143,7 +143,7 @@ export default function Home() {
             <Card
               srcTitle="Baixar"
               src="https://aem.herbalifenutrition.com/linkshare.html?sh=31cf0ea1_e366_4ff4_997d_c2a602651b1f.WwRKpAHulg_sPPRR_VKwHWb5BbPiGMF2-EZr71CseSA"
-              title="Todos os Documentos para Parceiros Juniores"
+              title="Documentos para Parceiro Junior"
               icon={<FiDownload />}
             />
           </div>
