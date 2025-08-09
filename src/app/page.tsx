@@ -67,15 +67,15 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-10">
             <Card
-              srcTitle="Galeria de vídeos"
-              src="https://www.youtube.com/playlist?list=PLSksKII1HhP4yNgQBOkKS1Bv_5TXgjSY7"
-              title="Vídeos de Treinamento Disponíveis Online"
-              icon={<FaArrowRightFromBracket />}
-            />
-            <Card
               srcTitle="Assistir"
               onClick={() => setWelcomeVideoOpen(true)}
               title="Vídeo de Apresentação do Clube de Café da Manhã Econômico"
+              icon={<FaArrowRightFromBracket />}
+            />
+            <Card
+              srcTitle="Galeria de vídeos"
+              src="https://www.youtube.com/playlist?list=PLSksKII1HhP4yNgQBOkKS1Bv_5TXgjSY7"
+              title="Vídeos de Treinamento Disponíveis Online"
               icon={<FaArrowRightFromBracket />}
             />
           </div>
