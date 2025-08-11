@@ -50,7 +50,7 @@ export default function Home() {
         </h1>
         <div className="relative w-full max-w-[600px] aspect-video my-6 shadow-card rounded-sm">
           <iframe
-            src="https://www.youtube.com/embed/Hl-vPXPZKE8?rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/_ajmV4cogg4?si=RFQQBBQ7dHiYcGFH"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"

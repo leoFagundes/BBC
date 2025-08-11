@@ -28,6 +28,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <footer className="w-full flex justify-center p-6">
+          <span className="text-center text-gray-800">
+            O Clube de Café da Manhã Econômico é um método de operação diária
+            bem-sucedido para um grupo de distribuidores e é compartilhado aqui
+            para sua inspiração. Cada distribuidor pode escolher como
+            administrar suas operações do Clube de Nutrição, sujeito à
+            conformidade com as regras da Herbalife e as leis aplicáveis.
+          </span>
+        </footer>
       </body>
     </html>
   );
