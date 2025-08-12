@@ -3,23 +3,31 @@
 import AnimatedLogo from "@/components/animated-logo";
 import Card from "@/components/card";
 import Modal from "@/components/modal";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { FiDownload } from "react-icons/fi";
 import { MdOutlineVideoLibrary } from "react-icons/md";
-import ReactPlayer from "react-player";
 
 export default function Home() {
   const [welcomeVideoOpen, setWelcomeVideoOpen] = useState(false);
   const [playing, setPlaying] = useState(false);
 
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setPlaying(true);
     }, 4000);
-
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    if (playing && videoRef.current) {
+      videoRef.current.play().catch(() => {
+        // Pode falhar se o navegador bloquear autoplay com som (mas você tem muted)
+      });
+    }
+  }, [playing]);
 
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
@@ -69,13 +77,16 @@ export default function Home() {
           ></iframe>
         </div> */}
         <div className="relative w-full max-w-[600px] aspect-video my-6 shadow-card rounded-sm overflow-hidden">
-          <ReactPlayer
+          <video
             src="video/welcome.mp4"
-            playing={playing}
+            autoPlay={playing}
             muted
             controls
             width="100%"
             height="100%"
+            controlsList="nodownload"
+            ref={videoRef}
+            onContextMenu={(e) => e.preventDefault()}
           />
         </div>
         <div className="w-full flex flex-col gap-8 max-w-[80%]">
