@@ -7,9 +7,19 @@ import { useEffect, useState } from "react";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { FiDownload } from "react-icons/fi";
 import { MdOutlineVideoLibrary } from "react-icons/md";
+import ReactPlayer from "react-player";
 
 export default function Home() {
   const [welcomeVideoOpen, setWelcomeVideoOpen] = useState(false);
+  const [playing, setPlaying] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setPlaying(true);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
@@ -48,7 +58,7 @@ export default function Home() {
         <h1 className="text-gray-600 font-semibold text-xl sm:text-4xl text-center">
           Bem-vindo ao seu Clube de Café da Manhã Econômico!
         </h1>
-        <div className="relative w-full max-w-[600px] aspect-video my-6 shadow-card rounded-sm">
+        {/* <div className="relative w-full max-w-[600px] aspect-video my-6 shadow-card rounded-sm">
           <iframe
             src="https://www.youtube.com/embed/_ajmV4cogg4?si=RFQQBBQ7dHiYcGFH"
             title="YouTube video player"
@@ -57,6 +67,16 @@ export default function Home() {
             allowFullScreen
             className="absolute top-0 left-0 w-full h-full rounded-sm"
           ></iframe>
+        </div> */}
+        <div className="relative w-full max-w-[600px] aspect-video my-6 shadow-card rounded-sm overflow-hidden">
+          <ReactPlayer
+            src="video/welcome.mp4"
+            playing={playing}
+            muted
+            controls
+            width="100%"
+            height="100%"
+          />
         </div>
         <div className="w-full flex flex-col gap-8 max-w-[80%]">
           <div className="relative flex justify-center items-center my-4">
