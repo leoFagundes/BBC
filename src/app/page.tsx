@@ -76,6 +76,7 @@ export default function Home() {
             className="absolute top-0 left-0 w-full h-full rounded-sm"
           ></iframe>
         </div> */}
+
         <div className="relative w-full max-w-[600px] aspect-video my-6 shadow-card rounded-sm overflow-hidden">
           <video
             src="video/welcome.mp4"
@@ -199,15 +200,16 @@ export default function Home() {
         isOpen={welcomeVideoOpen}
         onClose={() => setWelcomeVideoOpen(false)}
       >
-        <div className="relative w-full max-w-[800px] aspect-video my-6 shadow-card rounded-sm">
+        <div className="relative w-full max-w-[600px] aspect-video my-6 shadow-card rounded-sm overflow-hidden">
           <iframe
-            src="https://www.youtube.com/embed/Mzm4rTy52ao?rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/_khxh51-ZPU?si=_ay956ZPcLXN7Sjn&autoplay=1&mute=1&rel=0&modestbranding=1&controls=1"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="absolute top-0 left-0 w-full h-full rounded-sm"
-          ></iframe>
+            onContextMenu={(e) => e.preventDefault()}
+          />
         </div>
       </Modal>
     </div>
