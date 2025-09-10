@@ -121,62 +121,68 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-10">
             <Card
               srcTitle="Baixar"
-              src="https://aem.herbalifenutrition.com/linkshare.html?sh=c1f9c17e_1cbb_4586_8564_7936ec3fe6b7.Yly1T9MkiqV3dCVFtiaPWuf4WBUtAP69jO7BzHnc67U"
-              title="Política de Privacidade e Formulários de Consentimento"
+              src="https://drive.google.com/drive/folders/1ai6BBub17gxaU10W8qgzoL80ayM1_sax?usp=sharing"
+              title="Politica de Privacidade & Formulário de Consentimento"
               icon={<FiDownload />}
             />
             <Card
               srcTitle="Baixar"
-              src="https://aem.herbalifenutrition.com/linkshare.html?sh=113e95de_b4af_4bb9_ad57_856129c2a0c0.1dTp60OFyADFvlaPvX4cItd0aTPn7F0K3nm7a8dkfuM"
-              title="Estrutura de Caminho e Treinamento"
+              src="https://drive.google.com/drive/folders/1gJM_3sCFLOX4IgJAk44QHxZMKjN3E58r?usp=sharing"
+              title="Caminho & Estrutura de Treinamento"
               icon={<FiDownload />}
             />
             <Card
               srcTitle="Baixar"
-              src="https://aem.herbalifenutrition.com/linkshare.html?sh=659416f5_ec5e_4e7d_80f2_5ecc4db723d6.sEKkedkDvO2gr-mVFD2n_3geIM5P_P3xIKk19YxGjds"
+              src="https://drive.google.com/drive/folders/14kwPOAsecjI98o1Onbvpbyj053567Yx6?usp=sharing"
               title="Pré-Lançamento de 6 Semanas"
               icon={<FiDownload />}
             />
             <Card
               srcTitle="Baixar"
-              src="https://aem.herbalifenutrition.com/linkshare.html?sh=eced9092_5281_4cea_b525_cfa1d32a1a5b.44iFBbPdTLOKHEtP8UGO65jWquhmDcbx4ULShXwLos8"
-              title="Avaliação de Bem-Estar Presencial no Clube"
+              src="https://drive.google.com/drive/folders/16QgFBvoV_PtRRxNvpgTOyv4By7n_gke_?usp=sharing"
+              title="Avaliação de Bem-Estar Presencial"
               icon={<FiDownload />}
             />
             <Card
               srcTitle="Baixar"
-              src="https://aem.herbalifenutrition.com/linkshare.html?sh=8a63a964_f1d1_468b_b7c1_6bb66fe6c127.lcnKBJzxqqQaDo_cwqfQ2-bPkLhJm_hIt1eNCCdm7Qg"
-              title="Documentos da Revisão de Duas Semanas"
+              src="https://drive.google.com/drive/folders/1zilMFJzIEfsXLcMlmzc7cDdQlje0SnY-?usp=sharing"
+              title="Revisão de Duas Semanas"
               icon={<FiDownload />}
             />
             <Card
               srcTitle="Baixar"
-              src="https://aem.herbalifenutrition.com/linkshare.html?sh=3bc718b6_3668_4d07_9029_22a4377985c3.zYNs351igKGF4218zI4sUPi3hl5h_YnOKauV81lYJOk"
+              src="https://drive.google.com/drive/folders/1sJdIL_c8B258gCIOizl468cJdDSZHFO3?usp=sharing "
               title="Checklists do Clube de Café da Manhã Econômico"
               icon={<FiDownload />}
             />
             <Card
               srcTitle="Baixar"
-              src="https://aem.herbalifenutrition.com/linkshare.html?sh=6c813ce6_fa5d_4069_95e0_15e5b9f1b36f.H6UWbsI2wbkvQhbP57heNuGgJu646h1cErvan6oFgcI"
-              title="Documentos para Operar um Clube de Nutrição"
+              src="https://drive.google.com/drive/folders/1Gf0deImbwe6Ku7U7xnjkwtmL8dPrbl7o?usp=sharing "
+              title="Administrando um Clube de Nutrição"
               icon={<FiDownload />}
             />
             <Card
               srcTitle="Baixar"
-              src="https://aem.herbalifenutrition.com/linkshare.html?sh=3bc718b6_3668_4d07_9029_22a4377985c3.zYNs351igKGF4218zI4sUPi3hl5h_YnOKauV81lYJOk"
-              title="Clube de Café da Manhã Econômico Online"
+              src="https://drive.google.com/drive/folders/1GR2EV3R9CXFI-H5v5Oe3D0wIS5skU3mJ?usp=sharing "
+              title="Clube de Café da Manhã Online"
               icon={<FiDownload />}
             />
             <Card
               srcTitle="Baixar"
-              src="https://aem.herbalifenutrition.com/linkshare.html?sh=a46ad3ea_692d_48de_ad13_d34ad16a9594.EqPcv_o14S2np3Fa3CTeGEICyVfXBtBak1TEeGXxbyQ"
-              title="Documentos para Treinamento de Coach"
+              src="https://drive.google.com/drive/folders/1XolJtnhHWOUVBiB86uenNYI_mYnsV2GS?usp=sharing"
+              title="Todos os Documentos do Aprendiz"
               icon={<FiDownload />}
             />
             <Card
               srcTitle="Baixar"
-              src="https://aem.herbalifenutrition.com/linkshare.html?sh=31cf0ea1_e366_4ff4_997d_c2a602651b1f.WwRKpAHulg_sPPRR_VKwHWb5BbPiGMF2-EZr71CseSA"
-              title="Documentos para Parceiro Junior"
+              src="https://drive.google.com/drive/folders/1WNBh45WUWHQx-YqTNp9nSV3YzI1qCm2r?usp=sharing"
+              title="Todos os Documentos do Parceiro Júnior"
+              icon={<FiDownload />}
+            />
+            <Card
+              srcTitle="Baixar"
+              src="https://drive.google.com/drive/folders/1yUlVq_GW5mD9KVTY0gvS-XOXRlwyWA2w?usp=sharing"
+              title="Rastreadores do Clube de Café da Manhã Econômico"
               icon={<FiDownload />}
             />
           </div>
